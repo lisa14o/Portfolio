@@ -6,11 +6,15 @@
 <title>Lisa Fortino Rocks</title>
 <link href=css/style.css rel=stylesheet >
 <link href=css/media.css rel=stylesheet  >
+<link rel="stylesheet" type="text/css" href="http://visapi-gadgets.googlecode.com/svn/trunk/termcloud/tc.css"/>
 <script src="js/base.min.js"></script>
 <script src="js/nav_hightlight.js"></script>
 <script src="js/script.js"></script>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script type="text/javascript" src="http://visapi-gadgets.googlecode.com/svn/trunk/termcloud/tc.js"></script>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
 <!--[if gte IE 9]>
   <style type="text/css">
     .gradient {
@@ -23,36 +27,148 @@
 
 	<header>
 		<div class="logo"><!--image or header here-->
+			<img src="images/logo.png" alt="logo">
 			<h1>Lisa Fortino</h1>
-			<h3>Junior Front End Web Developer</h3>
+			<h4>Junior Front End Web Developer</h4>
 		</div><!--end logo-->
 
 		<div id="main_menu">
 			<ul>
-				<li><a href="work.html">Work</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a class="here" href="index.html">Work</a></li>
+				<li><a href="contact.html">Person</a></li>
 			</ul>
 		</div><!--end main menu-->
 	</header>
 
-	<div id="wrapper">
-		<div class="project column">
-		<div>
-			<figure><a href="plume.html"><img src="images/plume.png" /></a></figure>
-			<span class="title">Plume Records</span>
-			<span class="brief">Proin ultricies odio vel tempus imperdiet. Praesent sed tristique lorem. Aliquam consectetur urna quis leo eleifend, vitae dictum nunc pretium. Quisque porttitor eget ex ac sagittis. Sed in magna nisl.</span>
-		</div>
-		<div>
-			<figure><img src="images/plume.png" /></figure>
-			<span class="title">John Dillon</span>
-			<span class="brief">Mauris dictum nec dui vitae tristique. Morbi vitae rutrum libero, quis molestie diam. Praesent id nulla leo.</span>
-		</div>
-		<div>
-			<figure><img src="images/plume.png" /></figure>
-			<span class="title">Tiny Vipers</span>
-			<span class="brief">Fusce interdum velit sed porttitor ultricies. Aliquam erat volutpat. Phasellus mauris est, sodales placerat rutrum nec, cursus ut quam.</span>
-		</div>
-	</div>
+<div id="wrapper">
+	<div id="tcdiv"></div>
+	<div class="works">
+		<h3>Plume Records</h3>
+		<div class="facts_container">
+			<div class="work_facts">
+				<h4>Skills</h4>
+				<p class="fact">HTML/CSS</p>
+			</div><!--end project--> 
+			
+			<div class="work_facts">
+				<h4>Project URL</h4>
+				<a class="fact" href="http://plumerecords.com/" target="_blank">plumerecords.com</a>
+			</div><!--end project--> 
+			<div class="work_facts">
+				<h4>Completion Date</h4>
+				<p class="fact">2015 - Current</p>
+			</div><!--end project-->
+		</div><!--end facts container--> 
+		<img src="images/plume.png" alt="plume records">
+		<div class="description">
+			<h4>About this project - </h4>
+			<p>Donec tristique, diam in ultricies egestas, dolor metus elementum justo, vitae bibendum est dui at tortor. Phasellus non nibh et turpis gravida faucibus. Nulla ipsum turpis, vulputate vel ultrices vel, elementum nec erat. Integer venenatis quam nec eleifend efficitur. Mauris dictum nec dui vitae tristique.</p>
+			<h4>Customer Review</h4>
+			<p> Nulla ipsum turpis, vulputate vel ultrices vel, elementum nec erat. Integer venenatis quam nec eleifend efficitur. Mauris dictum nec dui vitae tristique.</p>
+		</div><!--end description-->
+
+	</div><!--end works-->
+
+		
+		<div class="works">
+		<h3>Dillon Sturtevant</h3>
+		<div class="facts_container">
+			<div class="work_facts">
+				<h4>Skills</h4>
+				<p class="fact">HTML/CSS, JavaScript/jQuery/AJAX</p>
+			</div><!--end project--> 
+			<div class="work_facts">
+				<h4>Project URL</h4>
+				<a class="fact" href="" target="_blank">dillon.com</a>
+			</div><!--end project--> 
+			<div class="work_facts">
+				<h4>Completion Date</h4>
+				<p class="fact">March 2015</p>
+			</div><!--end project-->
+		</div><!--end facts container--> 
+		<img src="images/plume.png" alt="plume records">
+		<div class="description">
+			<h4>About this project - </h4>
+			<p>Donec tristique, diam in ultricies egestas, dolor metus elementum justo, vitae bibendum est dui at tortor. Phasellus non nibh et turpis gravida faucibus. Nulla ipsum turpis, vulputate vel ultrices vel, elementum nec erat. Integer venenatis quam nec eleifend efficitur. Mauris dictum nec dui vitae tristique.</p>
+			<h4>Customer Review</h4>
+			<p> Nulla ipsum turpis, vulputate vel ultrices vel, elementum nec erat. Integer venenatis quam nec eleifend efficitur. Mauris dictum nec dui vitae tristique.</p>
+		</div><!--end description-->
+
+	</div><!--end works-->
+
+	<div class="works">
+		<h3>Tiny Vipers</h3>
+		<div class="facts_container">
+			<div class="work_facts">
+				<h4>Skills</h4>
+				<p class="fact">HTML/CSS, PHP, MySQL</p>
+			</div><!--end project--> 
+			<div class="work_facts">
+				<h4>Project URL</h4>
+				<a class="fact" href="" target="_blank">tinyvipers.com</a>
+			</div><!--end project--> 
+			<div class="work_facts">
+				<h4>Completion Date</h4>
+				<p class="fact">June 2014</p>
+			</div><!--end project-->
+		</div><!--end facts container--> 
+		<img src="images/plume.png" alt="plume records">
+		<div class="description">
+			<h4>About this project - </h4>
+			<p>Donec tristique, diam in ultricies egestas, dolor metus elementum justo, vitae bibendum est dui at tortor. Phasellus non nibh et turpis gravida faucibus. Nulla ipsum turpis, vulputate vel ultrices vel, elementum nec erat. Integer venenatis quam nec eleifend efficitur. Mauris dictum nec dui vitae tristique.</p>
+			<h4>Customer Review</h4>
+			<p> Nulla ipsum turpis, vulputate vel ultrices vel, elementum nec erat. Integer venenatis quam nec eleifend efficitur. Mauris dictum nec dui vitae tristique.</p>
+		</div><!--end description-->
+
+	</div><!--end works-->
+	</div><!--end wrapper-->
+
+	<footer>
+		<p>Lisa Fortino 2016</p>
+		<div class="social">
+			<a href="https://www.linkedin.com/in/lisafortino" target="_blank"><img src="images/social.png" alt="LinkedIn"></a>
+			<a href="https://github.com/lisa14o" target="_blank"><img src="images/circle.png" alt="GitHub"></a>
+		</div><!--end social-->
+	</footer>
+
+
+  </head>
+  
+    
+    <script type="text/javascript">
+      google.load("visualization", "1");
+      google.setOnLoadCallback(draw);
+      function draw() {
+        data = new google.visualization.DataTable();
+        data.addColumn('string', 'Label');
+        data.addColumn('number', 'Value');
+        data.addColumn('string', 'Link');
+        data.addRows(9);
+        data.setValue(0, 0, 'SASS');
+        data.setValue(0, 1, 15);
+        data.setValue(1, 0, 'HTML');
+        data.setValue(1, 1, 40);
+        data.setValue(1, 2, 'http://www.google.com');
+        data.setValue(2, 0, 'PHP/MySQL');
+        data.setValue(2, 1, 20);
+        data.setValue(3, 0, 'CSS');
+        data.setValue(3, 1, 35);
+         data.setValue(6, 0, 'node.js');
+        data.setValue(6, 1, 10);
+        data.setValue(4, 0, 'PhotoShop');
+        data.setValue(4, 1, 20);
+        data.setValue(4, 2, 'http://www.google.com');
+        data.setValue(5, 0, 'PHP');
+        data.setValue(5, 1, 30);
+        data.setValue(7, 0, 'MySQL');
+        data.setValue(7, 1, 22);
+        data.setValue(8, 0, 'GitHub');
+        data.setValue(8, 1, 25);
+        var outputDiv = document.getElementById('tcdiv');
+        var tc = new TermCloud(outputDiv);
+        tc.draw(data, null);
+      }
+    </script>
 
 </body>
 </html>

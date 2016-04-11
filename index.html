@@ -6,11 +6,6 @@
 <title>Lisa Fortino Rocks</title>
 <link href=css/style.css rel=stylesheet >
 <link href=css/media.css rel=stylesheet  >
-<script src="js/base.min.js"></script>
-<script src="js/nav_hightlight.js"></script>
-<script src="js/script.js"></script>
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <!--[if gte IE 9]>
   <style type="text/css">
     .gradient {
@@ -20,81 +15,128 @@
 <![endif]-->
 </head>
 <body>
-	
+
 	<header>
 		<div class="logo"><!--image or header here-->
+			<img src="images/logo.png" alt="logo">
 			<h1>Lisa Fortino</h1>
-			<h3>Junior Front End Web Developer</h3>
+			<h4>Junior Front End Web Developer</h4>
 		</div><!--end logo-->
 
 		<div id="main_menu">
 			<ul>
-				<li><a href="work.html">Work</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a class="here" href="index.html">Work</a></li>
+				<li><a href="contact.html">Person</a></li>
 			</ul>
 		</div><!--end main menu-->
 	</header>
 
-	<div id="wrapper">
-		<div class="profile_img">
-			<img src="images/poster_faces.jpg" alt="aren't we cute">
-			<img class="arrow" src="images/arrow_left_up.png" alt="red arrow">
-			<p class="side_note">Look at this professional picture I had done!</p>
-		</div><!--end profile img-->
+<div id="wrapper">
 
-		<div class="about_me">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu neque suscipit, sollicitudin quam id, aliquet eros. Fusce interdum velit sed porttitor ultricies. Aliquam erat volutpat. Phasellus mauris est, sodales placerat rutrum nec, cursus ut quam. Suspendisse potenti. Integer non risus quis metus hendrerit pellentesque. Nullam vel mi nec felis aliquam blandit at in erat. In hac habitasse platea dictumst. Praesent sollicitudin, massa ac euismod tempor, neque elit egestas mi, et scelerisque tortor dui sed lectus. Quisque vitae dolor et justo tempus ullamcorper sed in augue. Cras ut mollis mauris, bibendum commodo turpis.</p>
+	<div class="works">
+		<h3>Plume Records</h3>
+		<div class="facts_container">
+			<div class="work_facts">
+				<h4>Skills</h4>
+				<p class="fact">HTML/CSS</p>
+			</div><!--end project--> 
+			
+			<div class="work_facts">
+				<h4>Project URL</h4>
+				<a class="fact" href="http://plumerecords.com/" target="_blank">plumerecords.com</a>
+			</div><!--end project--> 
+			<div class="work_facts">
+				<h4>Completion Date</h4>
+				<p class="fact">2015 - Current</p>
+			</div><!--end project-->
+			<div class="social_media">
+				<a href="https://www.facebook.com/plumerecords/" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+				<a href="https://www.instagram.com/plumerecords/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+				<a href="https://twitter.com/plume_records" target="_blank"><img src="images/twitter.png" alt="Twitter"/></a>
+			</div><!--end social media-->
+		</div><!--end facts container--> 
+		<img class="screen_shot"src="images/plume.png" alt="plume records">
+		<div class="description">
+			<h4>About this project - </h4>
+			<p>Donec tristique, diam in ultricies egestas, dolor metus elementum justo, vitae bibendum est dui at tortor. Phasellus non nibh et turpis gravida faucibus. Nulla ipsum turpis, vulputate vel ultrices vel, elementum nec erat. Integer venenatis quam nec eleifend efficitur. Mauris dictum nec dui vitae tristique.</p>
+			<h4>Customer Review</h4>
+			<p> Nulla ipsum turpis, vulputate vel ultrices vel, elementum nec erat. Integer venenatis quam nec eleifend efficitur. Mauris dictum nec dui vitae tristique.</p>
+		</div><!--end description-->
 
-			<p>Donec tristique, diam in ultricies egestas, dolor metus elementum justo, vitae bibendum est dui at tortor. Phasellus non nibh et turpis gravida faucibus. Nulla ipsum turpis, vulputate vel ultrices vel, elementum nec erat. Integer venenatis quam nec eleifend efficitur. Mauris dictum nec dui vitae tristique. Morbi vitae rutrum libero, quis molestie diam. Praesent id nulla leo. Nam sit amet elementum est. Morbi a ante et sem finibus malesuada eget vel nunc. Praesent feugiat elit quam, ut venenatis tortor volutpat non.</p>
+	</div><!--end works-->
 
-			<p>Proin ultricies odio vel tempus imperdiet. Praesent sed tristique lorem. Aliquam consectetur urna quis leo eleifend, vitae dictum nunc pretium. Quisque porttitor eget ex ac sagittis. Sed in magna nisl. Aliquam feugiat sagittis eros at varius. Sed posuere elit at ex pellentesque, eu hendrerit lectus efficitur. Vivamus placerat erat at consectetur dictum. Praesent ut lobortis purus.</p>
-		</div><!--end about_me-->
+		
+		<div class="works">
+		<h3>Dillon Sturtevant</h3>
+		<div class="facts_container">
+			<div class="work_facts">
+				<h4>Skills</h4>
+				<p class="fact">HTML/CSS, JavaScript/jQuery/AJAX</p>
+			</div><!--end project--> 
+			<div class="work_facts">
+				<h4>Project URL</h4>
+				<a class="fact" href="" target="_blank">dillon.com</a>
+			</div><!--end project--> 
+			<div class="work_facts">
+				<h4>Completion Date</h4>
+				<p class="fact">March 2015</p>
+			</div><!--end project-->
+			<div class="social_media">
+				<a href=" " target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+				<a href=" " target="_blank"><img src="images/bandcamp.png" alt="Bandcamp"></a>
+				<a href=" " target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+			</div><!--end social media-->
+		</div><!--end facts container--> 
+		<img class="screen_shot" src="images/plume.png" alt="plume records">
+		<div class="description">
+			<h4>About this project - </h4>
+			<p>Donec tristique, diam in ultricies egestas, dolor metus elementum justo, vitae bibendum est dui at tortor. Phasellus non nibh et turpis gravida faucibus. Nulla ipsum turpis, vulputate vel ultrices vel, elementum nec erat. Integer venenatis quam nec eleifend efficitur. Mauris dictum nec dui vitae tristique.</p>
+			<h4>Customer Review</h4>
+			<p> Nulla ipsum turpis, vulputate vel ultrices vel, elementum nec erat. Integer venenatis quam nec eleifend efficitur. Mauris dictum nec dui vitae tristique.</p>
+		</div><!--end description-->
 
-		<div class="bullet_points">
-			<h2>I know you're probably busy, so here's some TL;DR bullet points for you</h2>
-			<ul class="bullets">
-				<li>Went to Seattle Central College. Twice.</li>
-				<li>Self-taught filmmaker</li>
-				<li>Lactose-Intolerant</li>
-				<li>My mom wants this just as much, if not more, than me</li>
-			</ul>
-		</div><!--end bullet points-->
+	</div><!--end works-->
 
+	<div class="works">
+		<h3>Tiny Vipers</h3>
+		<div class="facts_container">
+			<div class="work_facts">
+				<h4>Skills</h4>
+				<p class="fact">HTML/CSS, PHP, MySQL</p>
+			</div><!--end project--> 
+			<div class="work_facts">
+				<h4>Project URL</h4>
+				<a class="fact" href="" target="_blank">tinyvipers.com</a>
+			</div><!--end project--> 
+			<div class="work_facts">
+				<h4>Completion Date</h4>
+				<p class="fact">June 2014</p>
+			</div><!--end project-->
+			<div class="social_media">
+				<a href=" " target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+				<a href=" " target="_blank"><img src="images/bandcamp.png" alt="Bandcamp"></a>
+			</div><!--end social media-->
+		</div><!--end facts container--> 
+		<img class="screen_shot" src="images/plume.png" alt="plume records">
+		<div class="description">
+			<h4>About this project - </h4>
+			<p>Donec tristique, diam in ultricies egestas, dolor metus elementum justo, vitae bibendum est dui at tortor. Phasellus non nibh et turpis gravida faucibus. Nulla ipsum turpis, vulputate vel ultrices vel, elementum nec erat. Integer venenatis quam nec eleifend efficitur. Mauris dictum nec dui vitae tristique.</p>
+			<h4>Customer Review</h4>
+			<p> Nulla ipsum turpis, vulputate vel ultrices vel, elementum nec erat. Integer venenatis quam nec eleifend efficitur. Mauris dictum nec dui vitae tristique.</p>
+		</div><!--end description-->
+
+	</div><!--end works-->
 	</div><!--end wrapper-->
 
+	<footer>
+		<p>Lisa Fortino 2016</p>
+		<div class="social">
+			<a href="https://www.linkedin.com/in/lisafortino" target="_blank"><img src="images/blue_social.png" alt="LinkedIn"></a>
+			<a href="https://github.com/lisa14o" target="_blank"><img src="images/blue_circle.png" alt="GitHub"></a>
+			<a href="https://www.facebook.com/LisaFortino" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+			<a href="https://www.instagram.com/lisassy4tiny/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+		</div><!--end social-->
+	</footer>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
-<script src="js/plugins.min.js"></script>
-<script src="js/all.js"></script>
-<script src="js/improved.js"></script>
-<script>
-$(document).ready(function(e) {
-
-var $drawing = $('#main_menu');
-
-$('#main_menu').find('a').on('click', function(e){
-	e.preventDefault();
-
-	var $desc = $('#wrapper');
-
-	switch ($(this).attr('href')) {
-		case 'work.html' :
-			$desc.load('fragments/work.html');
-			break;
-		case 'person.html' :
-			$desc.load('fragments/person.html');
-			break;
-		case 'contact.html' :
-			$desc.load('fragments/contact.html');
-			break;
-		
-	}
-
-});
-
-
-});
-</script>
 </body>
 </html>
