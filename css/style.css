@@ -66,7 +66,7 @@ header {
 
 .logo {
 	float: left;
-	width: 700px;
+	width: 60%;
 	display: inline-block;
 }
 
@@ -174,7 +174,7 @@ header {
 }
 
 .social_media img {
-	width: 35px;
+	width: 18%;
 	padding-left: 5px;
 	padding-right: 5px;
 	vertical-align: middle;
@@ -184,13 +184,13 @@ header {
 /************** Person **************/
 
 #contact_wrapper {
-	width: 850px;
+	width: 900px;
 	max-width: 90%;
-	margin: 50px auto;
+	margin: 50px auto 0 auto;
 	overflow: hidden;
 }
 
-#contact_wrapper img {
+img.profile {
 	float: left;
 	width: 50%;
 }
@@ -216,17 +216,58 @@ header {
 	clear:both;
 	padding-top: 35px;
 	width: 100%;
+	overflow: hidden;
+}
+
+.about p {
+	padding-top: 15px;
 }
 
 .about a {
 	color: grey;
 }
 
+.about h3 {
+	border-top: 1px solid #BFBCB8;
+	border-bottom: 1px solid #BFBCB8;
+}
+
+.school {
+	display: inline-block;
+	width: 20%;
+	height: 100px;
+	float: left;
+	padding-top: 50px;
+	text-align: center;
+}
+
+.school img {
+	width: 150px;
+	vertical-align: middle;
+}
+
+.arrow {
+	display: block;
+	width: 60px;
+	float: right;
+	margin-right: 0;
+}
+
+.arrow img {
+	width: 50px;
+}
+
+.arrow span {
+	font-size: .8em;
+	font-weight: bold;
+	margin-left: -25px;
+}
+
 /************** Footer ***************/
 
 footer {
 	width: 960px;
-	margin: 20px auto;
+	margin: 10px auto 20px auto;
 	display: block;
 	clear: both;
 	overflow: hidden;
@@ -235,7 +276,7 @@ footer {
 }
 
 footer p {
-	width: 200px;
+	width: 40%;
 	display: inline-block;
 }
 

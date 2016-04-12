@@ -35,7 +35,7 @@
 	</header>
 
 	<div id="contact_wrapper">
-		<img src="images/profile_cutie.jpg" alt="profile picture">
+		<img class="profile" src="images/profile_cutie.jpg" alt="profile picture">
 		
 		<div class="skills">
 			<!--Word Cloud Goes Here-->
@@ -61,12 +61,25 @@
 		</div><!--end skills-->
 		
 		<div class="about">
+			<h3>About</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu neque suscipit, sollicitudin quam id, aliquet eros. Fusce interdum velit sed porttitor ultricies. Aliquam erat volutpat. Phasellus mauris est, sodales placerat rutrum nec, cursus ut quam. Suspendisse potenti. Integer non risus quis metus hendrerit pellentesque. Nullam vel mi nec felis aliquam blandit at in erat. In hac habitasse platea dictumst. Praesent sollicitudin, massa ac euismod tempor, neque elit egestas mi, et scelerisque tortor dui sed lectus. Quisque vitae dolor et justo tempus ullamcorper sed in augue. Cras ut mollis mauris, bibendum commodo turpis.<a href="mailto:lisa.fortino06@gmail.com">lisa.fortino06@gmail.com</a></p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu neque suscipit, sollicitudin quam id, aliquet eros. Fusce interdum velit sed porttitor ultricies. Aliquam erat volutpat. Phasellus mauris est, sodales placerat rutrum nec, cursus ut quam. Suspendisse potenti. Integer non risus quis metus hendrerit pellentesque. Nullam vel mi nec felis aliquam blandit at in erat. In hac habitasse platea dictumst. Praesent sollicitudin, massa ac euismod tempor, neque elit egestas mi, et scelerisque tortor dui sed lectus. Quisque vitae dolor et justo tempus ullamcorper sed in augue. Cras ut mollis mauris, bibendum commodo turpis.<a href="mailto:lisa.fortino06@gmail.com">lisa.fortino06@gmail.com</a></p>
-			
 		</div><!--end about-->
 
+		<div class="about">
+			<h3>Education</h3>
+			<div class="school"><img src="images/SCC3.png" alt="Seattle Central College"></div>
+			<div class="school"><img src="images/code_cademy.png" alt="Code Academy"></div>
+			<div class="school"><img src="images/general_assembly.png" alt="General Assembly"></div>
+			<div class="school"><img src="images/lynda2.png" alt="Lynda.com"></div>
+			<div class="school"><img src="images/khan2.png" alt="Khan Academy"></div>
+
+		</div><!--end about-->
+
+		<div class="arrow"><span>Follow me!</span><img src="images/down_arrow.png"></div><!--end arrow-->
 	</div><!--end contact wrapper-->
+
+	
 
 	<footer>
 	<p>Lisa Fortino 2016</p>
@@ -86,13 +99,13 @@
         data.addColumn('string', 'Label');
         data.addColumn('number', 'Value');
         data.addColumn('string', 'Link');
-        data.addRows(11);
+        data.addRows(14);
         data.setValue(0, 0, 'SASS');
         data.setValue(0, 1, 15);
         data.setValue(1, 0, 'HTML');
         data.setValue(1, 1, 40);
         data.setValue(2, 0, 'AJAX');
-        data.setValue(2, 1, 20);
+        data.setValue(2, 1, 15);
         data.setValue(3, 0, 'CSS');
         data.setValue(3, 1, 35);
         data.setValue(6, 0, 'node.js');
@@ -110,6 +123,12 @@
         data.setValue(9, 1, 15);
         data.setValue(10, 0, 'Googling Stuff');
         data.setValue(10, 1, 40);
+        data.setValue(13, 0, 'Wordpress');
+        data.setValue(13, 1, 15);
+        data.setValue(12, 0, 'Databases');
+        data.setValue(12, 1, 20);
+        data.setValue(11, 0, 'Responsive Web Design');
+        data.setValue(11, 1, 30);
         var outputDiv = document.getElementById('tcdiv');
         var tc = new TermCloud(outputDiv);
         tc.draw(data, null);
