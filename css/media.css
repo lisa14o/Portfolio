@@ -149,6 +149,7 @@ h4 {
 
 .works {
 	margin-bottom: 10px;
+	padding-top: 10px;
 }
 
 .works img {
@@ -240,7 +241,8 @@ img.screen_shot {
 }
 
 .contact {
-	width: 90%;
+	width: 87%;
+	margin: 0 auto;
 	float: none;
 }
 
