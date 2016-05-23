@@ -212,7 +212,7 @@ img.screen_shot {
 #contact_wrapper img {
 	float: none;
 	width: 100%;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 }
 
 .skills {
@@ -241,8 +241,9 @@ img.screen_shot {
 }
 
 .contact {
-	width: 87%;
+	width: 95%;
 	margin: 0 auto;
+	display: block;
 	float: none;
 }
 
@@ -251,11 +252,25 @@ form {
 	margin-bottom: 1em;
 }
 
+fieldset {
+	width: 90%;
+	margin: 0 auto;
+	border:1px;
+	border-radius:10px;
+	border: 1px solid #BFBCB8;
+	padding: 1em;
+}
+
 .other_contact {
 	float: none;
 	width: 95%;
 	margin-top: 1em;
 	margin-bottom: 1em;
+}
+
+.arrow {
+	width: 50px;
+	margin-right: 30px;
 }
 
 footer {
